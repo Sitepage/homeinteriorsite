@@ -1,0 +1,361 @@
+@import 'fonts.css';
+body {
+    font-family: 'Open Sans';
+    color: black;
+    font-size: 1rem;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+.menu {
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background: #9B9CA2;
+}
+
+.menu_logo {
+    height: 3rem;
+}
+
+.menu_logo a {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.logo_img {
+    width: 3.5rem;
+    margin-left: 1rem;
+}
+
+.menu_item {
+    margin-left: 2rem;
+}
+
+.nav_menu {
+    display: flex;
+}
+
+.nav_menu a {
+    font-weight: 700;
+}
+
+.nav_menu a:hover {
+    border-bottom: 0.15rem solid #362B2A;
+}
+
+.owl-carousel {
+    padding-top: 4rem;
+}
+
+.owl-next {
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 45%;
+}
+
+.owl-dots {
+    font-size: 0rem;
+}
+
+.about {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background: #FBF9F8;
+}
+
+.about_text {
+    padding-top: 1rem;
+}
+
+.works {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background: #EAE1DF;
+}
+
+.works_title {
+    margin-bottom: 2rem;
+}
+
+.works h2 {
+    font-size: 2rem;
+}
+
+.works-line_first {
+    margin-bottom: 1rem;
+}
+
+.works h3 {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.scale {
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(10, 10, 10, 0.57);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(10, 10, 10, 0.57);
+    box-shadow: 0px 0px 11px 0px rgba(10, 10, 10, 0.57);
+    transition: 1s;
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.team {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #FBF9F8;
+}
+
+.team_about {
+    margin-bottom: 3rem;
+}
+
+.team h2, h3 {
+    margin-bottom: 1.5rem;
+}
+
+.team_about, .team-item_img {
+    text-align: center;
+}
+
+.team-item_img, .team-item_text {
+    width: 48%;
+}
+
+.team img {
+    border-radius: 50%;
+}
+
+.right>div:first-child {
+    order: 2;
+}
+
+.footer {
+    padding: 2rem 0 1rem;
+    background: #816B67;
+}
+
+.footer-img {
+    max-width: 14rem;
+    width: 100%;
+}
+
+.footer-content_logo {
+    text-align: center;
+}
+
+.footer-logo {
+    width: 5rem;
+}
+
+.footer-content {
+    margin-top: 1rem;
+}
+
+.footer-content_contact {
+    margin-top: 2rem;
+}
+
+.footer-content_contact a {
+    display: block;
+}
+
+.footer-content_phone, .footer-content_email {
+    position: relative;
+}
+
+.footer-content_phone i, .footer-content_email i {
+    position: absolute;
+    left: -1.3rem;
+    top: 0.3rem;
+}
+
+.footer-content_menu li {
+    padding-bottom: 0.2rem;
+}
+
+.menu-burger {
+    display: flex;
+}
+
+.menu-burger_btn {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-burger_btn {
+        display: block;
+        position: fixed;
+        top: 0.5rem;
+        left: 1.5rem;
+        z-index: 30;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #816B67;
+        transition: 0.4s;
+        border: none;
+    }
+    .logo_img {
+        display: none;
+    }
+    .menu_logo {
+        margin-left: 4rem;
+    }
+    .menu-burger_btn:hover .menu-burger_lines {
+        filter: brightness(0.7);
+    }
+    .menu-burger_lines, .menu-burger_lines::after, .menu-burger_lines::before {
+        position: absolute;
+        width: 1.8rem;
+        height: 0.3rem;
+        background-color: black;
+    }
+    .menu-burger_lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menu-burger_lines::before {
+        content: "";
+        top: -0.5rem;
+        right: 0;
+    }
+    .menu-burger_lines::after {
+        content: "";
+        top: 0.5rem;
+        right: 0;
+    }
+    .menu-burger_active .menu-burger_btn, .menu-burger_active .menu-burger_lines {
+        background-color: transparent;
+    }
+    .menu-burger_active .menu-burger_lines::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .menu-burger_active .menu-burger_lines::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .nav_menu {
+        padding-top: 4rem;
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        background-color: #816B67;
+        overflow-y: auto;
+        left: -100%;
+        transition: 0.5s;
+        top: 0;
+    }
+    .menu-burger_active .nav_menu {
+        left: 0;
+    }
+    .menu_item {
+        padding: 0.7rem 1.5rem 1rem 0;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        font-weight: bold;
+    }
+    .nav_menu a:hover {
+        color: #282727;
+    }
+    .menu-burger_over {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+    .menu-burger_active .menu-burger_over {
+        display: block;
+    }
+    button, button:active, button:focus {
+        outline: none;
+    }
+    .team-item_text {
+        text-align: center;
+        width: auto;
+        padding: 0 2rem;
+        margin-top: 2rem;
+    }
+    .team-item_img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .works img {
+        width: 100%;
+    }
+    .right>div:first-child {
+        order: 0;
+    }
+    .left, .right {
+        flex-direction: column;
+    }
+    .team_about {
+        margin: 0;
+    }
+    .left p, .right p {
+        margin: 0 1rem;
+    }
+    .footer-brands, .footer-content {
+        flex-wrap: wrap;
+    }
+    .footer-content_menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-content_logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .team-item_img img {
+        width: 100%;
+        max-width: 18rem;
+    }
+}
